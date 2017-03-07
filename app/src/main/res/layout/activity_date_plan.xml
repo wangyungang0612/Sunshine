@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragment_bg"
+    android:orientation="vertical">
+    <LinearLayout
+        android:paddingRight="30dp"
+        android:paddingTop="20dp"
+        android:paddingLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:background="@color/silver"
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:textSize="45dp" />
+
+        <Button
+            android:layout_marginLeft="50dp"
+            android:background="@color/silver"
+            android:id="@+id/date_plan2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="导入日计划"
+            android:textSize="45dp" />
+
+    </LinearLayout>
+
+
+    <!--ListView-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/print_title_bg">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                    android:text="SN"
+                android:textColor="@color/white_line"
+                android:textSize="30px" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="PASS"
+                android:textColor="@color/white_line"
+                android:textSize="30px" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="MAC"
+                android:textColor="@color/white_line"
+                android:textSize="30px" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="PNO"
+                android:textColor="@color/white_line"
+                android:textSize="30px" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="ENCRYPTION"
+                android:textColor="@color/white_line"
+                android:textSize="30px" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="DATE"
+                android:textColor="@color/white_line"
+                android:textSize="30px" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="DESCRIPTION"
+                android:textColor="@color/white_line"
+                android:textSize="30px" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="KEY"
+                android:textColor="@color/white_line"
+                android:textSize="30px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/footer_bg" />
+
+            <ListView
+                android:id="@+id/dateplan_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:divider="#00000000"
+                android:scrollbars="none"
+                android:transcriptMode="alwaysScroll"></ListView>
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/footer_bg" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/footer_bg" />
+    </LinearLayout>
+
+
+</LinearLayout>

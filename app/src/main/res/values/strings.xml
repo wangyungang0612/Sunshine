@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">阳光电源</string>
+    <drawable name="clr_normal">#f15a29</drawable>
+    <drawable name="clr_normal2">#C0C0C0</drawable>
+    <drawable name="clr_pressed">#cdcdcd</drawable>
+    <drawable name="clr_pressed2">#0e4bb5</drawable>
+</resources>
